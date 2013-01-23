@@ -1,0 +1,143 @@
+// You custom settings file to override Foundation defaults
+@import "settings";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// ----------------------------------------
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "compass/css3";
+// @import "foundation/settings";
+// @import "foundation/functions/all";
+
+// Control which mixins you have access too
+
+// @import "foundation/mixins/clearfix";
+// @import "foundation/mixins/css-triangle";
+// @import "foundation/mixins/font-size";
+
+// Must include next two for semantic grid to work
+
+// @import "foundation/mixins/respond-to";
+// @import "foundation/mixins/semantic-grid";
+
+// @import "modular-scale";
+// @import "foundation/common/globals";
+
+// Must include the grid for any responsiveness
+
+// @import "foundation/components/grid";
+
+// Control which common styles get compiled
+
+// @import "foundation/common/typography";
+// @import "foundation/common/forms";
+
+// Control which components you get if customizing
+
+// @import "foundation/components/modules/buttons";
+// @import "foundation/components/modules/tabs";
+// @import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+// @import "foundation/components/modules/orbit";
+// @import "foundation/components/modules/reveal";
+// @import "foundation/components/modules/offcanvas";
+
+// Media Queries Overrides
+// @import "foundation/components/modules/mqueries";
+
+body{
+	background-image: url(../images/background.png);
+}
+
+#map {
+  width: 640px;
+  height: 640px;
+  background-repeat: no-repeat;
+  background-size:auto;
+  position: absolute;
+  margin-left: -320px;
+  left: 50%;
+  box-shadow: 5px 5px 20px 3px black;
+}
+
+nav {
+	width: 100%;
+}
+
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  color: #dcccb3;
+  background-size: contain;
+  
+  .labels{
+	  text-align: center;
+	  position: relative;
+	  margin: auto;
+	  top: -2em;
+  }
+  
+  input{
+	  width: 80%;
+	  position: relative;
+	  
+  }
+  
+  .values{
+	  text-align: center;
+	  position: relative;
+	  margin: auto;
+	  top: -3em;
+  }
+  
+  .color{
+   text-align: center;
+	  position: relative;
+	  margin: auto;
+	  top: -4.2em;
+	  left: 1em;  
+  }
+  
+  .alert{
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  border-radius: 50%;
+	  margin: 0;
+	  width: 20px;
+	  height: 20px;
+	  padding: 0;
+  }
+}
+
+#hiddenzoom{
+	position: relative;
+	top: 6px;
+	left: -3px;
+	width: 45px;
+}
+
+h1{
+	p{
+		color: #ffffff;
+	}
+}
+
+h2{
+	p{
+		color: #ffffff;
+	}
+}
+
+.left li{
+	color: white;
+	margin-left: 2em;	
+}
+
+.left .search {
+	margin-left: 0em;
+}
